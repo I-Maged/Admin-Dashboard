@@ -16,7 +16,7 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  height: 100vh;
+  min-height: 100vh;
 }
 .container {
   display: grid;
@@ -24,11 +24,47 @@ body {
 }
 .dashboard {
   background-color: var(--dashboard-blue);
+  padding: 25px 20px;
 }
-.dash-element {
+
+.db-header p {
+  color: var(--element-white);
+  font-size: 24px;
+  font-weight: 500;
+}
+.dash-element,
+.db-header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
   color: var(--element-white);
+}
+.db-header {
+  margin: 0 0 10px 0;
+}
+.db-menu {
+  margin: 50px 0;
+}
+.dash-element {
+  margin: 15px 0;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+}
+.dash-element a {
+  color: var(--element-white);
+  text-decoration: none;
+  font-size: 18px;
+}
+.dash-element a::active,
+.dash-element a::a:visited {
+  color: var(--element-white);
+}
+.header {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--element-white);
 }
