@@ -21,7 +21,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 2fr 6fr 0.5fr;
+  grid-template-rows: 1fr 4fr 0.3fr;
 }
 .dashboard {
   grid-row: 1 / span 2;
@@ -115,6 +115,7 @@ body {
 .header-buttons {
   display: flex;
   align-items: center;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   gap: 15px;
 }
@@ -145,4 +146,21 @@ body {
 }
 .card {
   background-color: var(--element-white);
+  border-radius: 0 5px 5px 0;
+  border-left: 5px solid var(--border-yellow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.card-icons {
+  align-self: flex-end;
+  display: flex;
+  gap: 15px;
 }
