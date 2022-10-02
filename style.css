@@ -21,7 +21,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 4fr 0.3fr;
+  /* grid-template-rows: 1fr 4fr 0.3fr; */
 }
 .dashboard {
   grid-row: 1 / span 2;
@@ -65,7 +65,7 @@ body {
   color: var(--element-white);
 }
 .header {
-  padding: 30px;
+  padding: 10px 30px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -115,7 +115,7 @@ body {
 .header-buttons {
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px;
 }
@@ -128,6 +128,7 @@ body {
   text-decoration: none;
   border: none;
   outline: none;
+  box-shadow: 0px 10px 14px -7px #276873;
 }
 .btn:hover {
   background: #3cb0fd;
@@ -154,6 +155,7 @@ body {
   gap: 15px;
   justify-content: space-between;
   align-items: flex-start;
+  box-shadow: 0px 3px 15px 0px var(--dashboard-blue);
 }
 .card-title {
   font-size: 20px;
@@ -163,4 +165,20 @@ body {
   align-self: flex-end;
   display: flex;
   gap: 15px;
+}
+.ads-cards {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--element-white);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+}
+.ads-cards .card-title {
+  margin-bottom: 8px;
+}
+.ads-card:not(:last-child) {
+  border-bottom: 1px solid var(--font-black);
+  padding-bottom: 10px;
 }
